@@ -1,1 +1,67 @@
 <p>userform works!</p>
+
+<h1>
+    Fill all the fields below
+</h1>
+
+<span>{{title}}</span>
+
+
+
+
+
+
+<div class="row">
+    <div class="col">
+      <input type="text"   class="form-control" placeholder="First name"
+      [(ngModel)]=user.firstName aria-label="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name"
+      [(ngModel)]=user.lastName aria-label="Last name">
+    </div>
+
+    <div class="col">
+        <input type="number" class="form-control" placeholder="Age"
+        [(ngModel)]=user.age aria-label="Last name">
+      </div>
+
+     
+
+  </div>
+
+  <br>
+  <br>
+  <!-- <div class="form-check"> 
+    <input class="form-check-input"  [(ngModel)]=user.Gender Value = "male" type="radio"
+     name="Gender" id="male" >
+    <label class="form-check-label" for="male">
+      Male
+    </label>
+  </div> -->
+
+  <div class="form-check" >
+    <input class="form-check-input"  [(ngModel)]=user.Gender Value = "female" type="radio"
+     name="Gender" id="female">
+    <label class="form-check-label" for="female">
+     
+      Female
+    </label>
+  </div>
+
+
+  <div class="form-check">
+    <input class="form-check-input"  [(ngModel)]=user.Gender  type="radio"
+     name="Gender" id="male" value="male" checked>
+    <label class="form-check-label" for="male">
+     Male
+    </label>
+  </div>
+
+
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button" (click)="save()">Save User</button>
+ 
+  </div>
+
+  

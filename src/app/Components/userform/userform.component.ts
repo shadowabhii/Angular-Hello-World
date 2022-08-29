@@ -15,6 +15,7 @@ export class UserformComponent implements OnInit {
 
   title = "Fill all the fields below";
   user:User = new User();
+  users :User[]=[];
  // UserDetails = {
 
     // firstName: "",
@@ -41,6 +42,15 @@ export class UserformComponent implements OnInit {
   constructor(public userService: UserService) { }
 
   ngOnInit(): void {
+
+    const promise = this.userService.getUsers();
+    promise.subscribe((response)=>{
+      console.log(response);
+      this.users=response as User[];
+
+    }
+    )
+
   }
 
 }

@@ -32,22 +32,10 @@
 
   <br>
   <br>
-  <!-- <div class="form-check"> 
-    <input class="form-check-input"  [(ngModel)]=user.Gender Value = "male" type="radio"
-     name="Gender" id="male" >
-    <label class="form-check-label" for="male">
-      Male
-    </label>
-  </div> -->
 
-  <div class="form-check" >
-    <input class="form-check-input"  [(ngModel)]=user.Gender Value = "female" type="radio"
-     name="Gender" id="female">
-    <label class="form-check-label" for="female">
-     
-      Female
-    </label>
-  </div>
+  <h2>Select Gender</h2>
+
+  
 
 
   <div class="form-check">
@@ -58,10 +46,28 @@
     </label>
   </div>
 
+  <div class="form-check">
+    <input class="form-check-input"  [(ngModel)]=user.Gender  type="radio"
+     name="Gender" id="female" value="female" checked>
+    <label class="form-check-label" for="female">
+     Female
+    </label>
+  </div>
+
 
   <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button" (click)="save()">Save User</button>
  
   </div>
 
-  
+  <ol class="list-group list-group-numbered">
+    <li *ngFor= "let u of users" class="list-group-item">
+
+      <span>{{u.firstName}}</span> <br>
+      <span>{{u.lastName}}</span> <br>
+      <span>{{u.age}}</span> <br>
+      <span>{{u.Gender}}</span> <br>
+     
+    </li>
+
+  </ol>

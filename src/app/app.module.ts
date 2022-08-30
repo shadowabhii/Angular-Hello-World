@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { UserformComponent } from './Components/userform/userform.component';
 import {HttpClientModule} from '@angular/common/http';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    UserformComponent
+    UserformComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

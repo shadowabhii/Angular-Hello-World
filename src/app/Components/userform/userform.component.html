@@ -61,12 +61,14 @@
   </div>
 
   <ol class="list-group list-group-numbered">
-    <li *ngFor= "let u of users" class="list-group-item">
+    <li *ngFor= "let u of users; index as i" 
+    class="list-group-item">
 
       <span>{{u.firstName}}</span> <br>
       <span>{{u.lastName}}</span> <br>
       <span>{{u.age}}</span> <br>
       <span>{{u.Gender}}</span> <br>
+      <button type="button" (click)="deleteRow(u, i)" class="btn btn-danger">Delete</button>
      
     </li>
 

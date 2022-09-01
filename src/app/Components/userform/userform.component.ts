@@ -57,6 +57,14 @@ export class UserformComponent implements OnInit {
     })
   }
 
+  sortdesc()
+  {
+    this.users.sort(function(user1,user2)
+    {
+      return user2.age-user1.age
+    })
+  }
+
   constructor(public userService: UserService) { }
 
   ngOnInit(): void {

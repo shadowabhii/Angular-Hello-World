@@ -9,13 +9,15 @@ import { UserformComponent } from './Components/userform/userform.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { PipedemoComponent } from './Components/pipedemo/pipedemo.component';
+import { EllipsisPipe } from './ellipsis.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     UserformComponent,
     AboutUsComponent,
-    PipedemoComponent
+    PipedemoComponent,
+    EllipsisPipe
   ],
   imports: [
     BrowserModule,

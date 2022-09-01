@@ -8,13 +8,14 @@ import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { UserformComponent } from './Components/userform/userform.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
-
+import { PipedemoComponent } from './Components/pipedemo/pipedemo.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     UserformComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PipedemoComponent
   ],
   imports: [
     BrowserModule,
